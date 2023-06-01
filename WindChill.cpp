@@ -19,8 +19,7 @@ void WindChill::DisplayWindChill()
 double WindChill::CalculateChill(double _temperature, double _wind) const
 {
 	return round(
-		35.74 + 0.6215 * (_temperature) - 35.75 * (pow(_wind, 0.16)) + 0.4275 * (_temperature) * (
-			pow(_wind, 0.16)) * 100) / 100;
+		(35.74 + 0.6215 * _temperature - 35.75 * pow(_wind, 0.16) + 0.4275 * _temperature * pow(_wind, 0.16)) * 100) / 100;
 }
 
 double WindChill::getTemperature() const

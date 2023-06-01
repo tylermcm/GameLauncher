@@ -147,6 +147,9 @@
     <ClInclude Include="WindChill.h" />
     <ClInclude Include="Wordle.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.md" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
